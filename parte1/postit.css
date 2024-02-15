@@ -1,0 +1,93 @@
+body {
+  font: 2rem "Indie Flower";
+
+  background-color: grey;
+}
+.lavagna {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+.lavagna div {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset, rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 15px,
+    rgba(0, 0, 0, 0.09) 0px -3px 8px;
+  width: 250px;
+  height: 190px;
+  padding: 20px;
+  margin: 20px;
+  transition: 1s;
+}
+
+h2 {
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+.t1,
+.t5,
+.t7 {
+  background-color: #f1f2bc;
+  transform: rotate(354deg);
+}
+
+.t2,
+.t4,
+.t8 {
+  background-color: #c6f6c9;
+  transform: rotate(5deg);
+}
+
+.t3,
+.t6 {
+  background-color: #c2c3ec;
+  transform: rotate(350deg);
+}
+.lavagna div:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset, rgba(0, 0, 0, 0.8) 0px 23px 42px -1px;
+  transition: 1s;
+}
+
+@keyframes openPage {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lavagna div {
+  animation: openPage 0.5s both;
+}
+.lavagna .t1 {
+  animation-delay: 1s;
+}
+.lavagna .t4 {
+  animation-delay: 1.5s;
+}
+.lavagna .t2 {
+  animation-delay: 2s;
+}
+.lavagna .t7 {
+  animation-delay: 2.5s;
+}
+.lavagna .t8 {
+  animation-delay: 3s;
+}
+.lavagna .t5 {
+  animation-delay: 3.5s;
+}
+.lavagna .t6 {
+  animation-delay: 4s;
+}
+.lavagna .t3 {
+  animation-delay: 4.5s;
+}
